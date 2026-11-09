@@ -17,10 +17,12 @@ Solana On-Chain Accounts · Funding Amount · Category · Why You.
 `China`
 
 ## First Name
-`Kyle`
+`Kui`
 
 ## Last Name
-`Light`  ← **未确认**：GitHub 是 `kyleslight`，邮箱 `likelakes07`，真实姓氏未取证，Kyle 拍板。
+`Lin`
+
+默认填 **Kui Lin**（真名）。表单只收公司名 / 网址 / 国家 / 姓名 / 邮箱 / 链上地址 / 金额 / 类别 / Why You，没有身份证件、没有 KYC 上传 → **未取证**：基金会后台是否做姓名核验。若你希望用 `Kyles Lin` 对外，只改这两格，其余不动；两个版本的差别仅此。
 
 ## Email Address
 `likelakes07@gmail.com`
@@ -81,6 +83,10 @@ https://kyleslight.github.io/x402-meter/ with no server and no cost to operate.`
 
 ## Open questions for Kyle
 
-1. Last Name 用 `Light` 还是别的？
-2. 金额 $24,000 是否合适（可改 $12,000 两里程碑或 $40,000 加一个链上索引里程碑）？
-3. 提交前要不要把 repo 从 public 改 private？（现在是 public，评审能看到代码，对可信度有利）
+1. 姓名已定：Kui Lin（默认），Kyles Lin 为备选 —— 只影响 First/Last Name 两格。
+2. 金额已定：$24,000 / 3 里程碑。
+3. repo 保持 public：评审可自己 `node probe.js` 复现 402。
+
+## 待你点头才能做的最后一步
+
+把上面 11 个字段填进 https://share.hsforms.com/1GE1hYdApQGaDiCgaiWMXHA5lohw ，**不点 Submit**，或由你点。
