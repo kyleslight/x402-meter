@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T05:23:17.767Z",
+  "generated_at": "2026-11-09T05:27:41.447Z",
   "api": "https://hermes.swap.io",
   "challenge": {
     "x402Version": 1,
@@ -28,10 +28,10 @@
       "method": "GET",
       "url": "https://hermes.swap.io/v1/info",
       "status": 200,
-      "ms": 1527,
+      "ms": 931,
       "headers": {
         "content-type": "application/json",
-        "cf-ray": "a57a627079900707-HKG"
+        "cf-ray": "a57a68de9adcf4e6-ORD"
       },
       "body": {
         "description": "Paid swap API for users and AI agents, monetized per request via x402. Proxies the routhex routing engine.",
@@ -480,10 +480,10 @@
       "method": "POST",
       "url": "https://hermes.swap.io/v1/swap/quote",
       "status": 402,
-      "ms": 344,
+      "ms": 124,
       "headers": {
         "content-type": "application/json",
-        "cf-ray": "a57a62729cd00707-HKG"
+        "cf-ray": "a57a68e34dcbf4e6-ORD"
       },
       "body": {
         "x402Version": 1,
