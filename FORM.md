@@ -1,9 +1,19 @@
 # Solana Foundation Funding — form draft
 
 Form: https://share.hsforms.com/1GE1hYdApQGaDiCgaiWMXHA5lohw
-Status: **filled, NOT submitted** (waiting for Kyle).
-Required fields: Company name · Website URL · Country · First Name · Last Name · Email Address ·
-Solana On-Chain Accounts · Funding Amount · Category · Why You.
+Status: **SUBMITTED** — 2026-11-09 05:40 UTC (13:40 CST).
+
+确认页原文（已取证，提交后页面 alert 节点）：
+
+> Thank you for applying for funding from the Solana Foundation! You will receive a confirmation email shortly -- please make sure to check your Spam folder as well. Given the large quantity of applications we receive, not everyone will receive a reply. If you don't receive a reply, it means your project is not fit for funding at this time.
+
+确认邮件：**未取证** —— 05:42 UTC 查 Gmail（`newer_than:1h` 与 `from:solana`）都为空，页面说 shortly，稍后应到。
+
+表单实际字段：选 AI 后**条件字段才出现**，共 10 个必填 + 1 个单选组，与之前抄的 11 项不同：
+Company name · Website URL · Country · First Name · Last Name · Email Address ·
+Solana On-Chain Accounts · Funding Amount（**数字型，只收纯数字**，填 `24000`）·
+Which funding category（AI）· Your project / idea · Is / will this project be open sourced?（Yes）·
+Milestones（三段金额＋交付物）· Relevant metrics · Competition · How is this project a public good? · Why You.
 
 ---
 
@@ -35,7 +45,7 @@ Freshly generated ed25519 keypair (2026-11-09), used only to receive payouts. Se
 milestone ships the probe archive as a static site, not an on-chain program.
 
 ## Funding Amount
-`$24,000 USDC over 3 milestones`
+`24000`（表单此格是数字输入，填 `$24,000 USDC over 3 milestones` 会被整格清空；实际提交为纯数字 24000，币种与分期写在 Milestones 格里）
 
 | # | Weeks | Amount | Deliverable |
 | --- | --- | --- | --- |
@@ -87,6 +97,25 @@ https://kyleslight.github.io/x402-meter/ with no server and no cost to operate.`
 2. 金额已定：$24,000 / 3 里程碑。
 3. repo 保持 public：评审可自己 `node probe.js` 复现 402。
 
-## 待你点头才能做的最后一步
+## 已提交时额外填的五个字段（正文见下）
 
-把上面 11 个字段填进 https://share.hsforms.com/1GE1hYdApQGaDiCgaiWMXHA5lohw ，**不点 Submit**，或由你点。
+**Your project / idea** — x402 Meter 是什么、每 15 分钟无付款头打一次、记 402 的 atomic 金额/payTo/feePayer/原始 body、现在只测 hermes.swap.io（12 端点、标价 3000、实收 3007）、无引荐自行申请。
+
+**Is / will this project be open sourced?** — `Yes`。
+
+**Milestones**（按表单示例格式，三段）：
+
+- $6,000 due upon completion of Milestone 1 deliverable - meter live for three x402 providers on Solana, every probe archived with a timestamp and the raw response body, a documented JSON schema, and the page rebuilt from that archive with no hand-typed numbers.
+- $9,000 due upon completion of Milestone 2 deliverable - x402-meter CLI and npm package released, zero dependencies, test suite green, and five worked examples of an agent paying per call (quote, build transaction, submit) with the 402 handling written out.
+- $9,000 due upon completion of Milestone 3 deliverable - ten providers onboarded to the meter, a weekly price index with change history and per-endpoint diffs, and three reference agents (DCA bot, research agent, treasury rebalancer) that pay per request instead of subscribing. Adoption target: 25 unique repos or agents reading the meter's JSON in the last 30 days of the milestone.
+
+**Relevant metrics** — 如实报小：2026-11-09 起跑，每 15 分钟一次、bot 自动提交、原始 402 body 全留；现索引 1 家 provider 的 12 个计价端点；公开无注册；外部消费者目前只有我自己；repo 公开、一条命令可复现。
+
+**Competition** — 现有的是目录（x402 service indexes 列 provider 与标价），缺的是「调用那一刻服务器实际要多少」＋payTo/feePayer＋原始 body＋按计划留存；我的优势是记录本身，不是清单；provider 可以拿它测自己，所以是合作不是竞争。
+
+**How is this project a public good** — 免费、无注册、MIT、无 token 无付费墙；任何人可把同一 probe 指向自己的或对手的服务；静态文件托管、零成本；也算一个 novel proof of concept：据我所知 Solana 上没有公开、带版本的 x402 challenge 记录。
+
+## 提交时遇到的卡点（备查）
+
+1. Funding Amount 是数字输入：带 `$`、逗号、文字的整段会被清空，只认纯数字 → 填 `24000`。
+2. Submit 触发 reCAPTCHA 图片题（「Select all squares with traffic lights」），浏览器合成点击进不了 iframe → 用 Computer Use 原生点击选中 2 格（列 2、行 2-3）后点 VERIFY，通过并提交。
