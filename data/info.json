@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-16T17:54:50.123Z",
+  "generated_at": "2026-11-17T01:16:32.818Z",
   "check": {
     "name": "GET /v1/info",
     "method": "GET",
     "url": "https://hermes.swap.io/v1/info",
     "status": 200,
-    "ms": 4444,
+    "ms": 930,
     "headers": {
       "content-type": "application/json",
-      "cf-ray": "a5b85cda6d7f2633-EWR"
+      "cf-ray": "a5bae3fb0c8417fe-SEA"
     },
     "body": {
       "description": "Paid swap API for users and AI agents, monetized per request via x402. Proxies the routhex routing engine.",
@@ -253,7 +253,7 @@
             {
               "scheme": "exact",
               "network": "solana",
-              "maxAmountRequired": "4582",
+              "maxAmountRequired": "4590",
               "resource": "https://hermes.swap.io/v1/orders/limit/create",
               "description": "Paid swap API (routhex): quote and build unsigned transactions; caller signs and broadcasts",
               "mimeType": "application/json",
@@ -267,7 +267,7 @@
             {
               "scheme": "exact",
               "network": "base",
-              "maxAmountRequired": "4582",
+              "maxAmountRequired": "4590",
               "resource": "https://hermes.swap.io/v1/orders/limit/create",
               "description": "Paid swap API (routhex): quote and build unsigned transactions; caller signs and broadcasts",
               "mimeType": "application/json",
@@ -281,7 +281,7 @@
             }
           ],
           "asset": "USDC",
-          "basePrice": "4582",
+          "basePrice": "4590",
           "method": "POST",
           "operation": "order-limit-create",
           "path": "/v1/orders/limit/create",
@@ -292,7 +292,7 @@
             {
               "scheme": "exact",
               "network": "solana",
-              "maxAmountRequired": "4563",
+              "maxAmountRequired": "4571",
               "resource": "https://hermes.swap.io/v1/orders/dca/create",
               "description": "Paid swap API (routhex): quote and build unsigned transactions; caller signs and broadcasts",
               "mimeType": "application/json",
@@ -306,7 +306,7 @@
             {
               "scheme": "exact",
               "network": "base",
-              "maxAmountRequired": "4563",
+              "maxAmountRequired": "4571",
               "resource": "https://hermes.swap.io/v1/orders/dca/create",
               "description": "Paid swap API (routhex): quote and build unsigned transactions; caller signs and broadcasts",
               "mimeType": "application/json",
@@ -320,7 +320,7 @@
             }
           ],
           "asset": "USDC",
-          "basePrice": "4563",
+          "basePrice": "4571",
           "method": "POST",
           "operation": "order-dca-create",
           "path": "/v1/orders/dca/create",
